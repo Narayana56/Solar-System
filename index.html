@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Solar System Simulation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="canvas-container">
+    <canvas id="solar-system-canvas"></canvas>
+
+    <!-- Info Panel -->
+    <div id="info-panel">
+      <div class="info-title">🌞 3D Solar System</div>
+      <div>• Tap planets to focus</div>
+      <div>• Drag to rotate view</div>
+      <div>• Pinch to zoom</div>
+      <div>• Use controls to adjust speeds</div>
+      <div id="focused-planet" class="focused-planet"></div>
+    </div>
+
+    <!-- Control Panel -->
+    <div id="control-panel">
+      <div class="section-title">🎛️ Solar System Controls</div>
+      <div class="button-group">
+        <button id="pause-btn" class="control-btn">⏸️ Pause</button>
+        <button id="reset-btn" class="control-btn">🔄 Reset View</button>
+        <button id="theme-btn" class="control-btn theme">🌙 Light Mode</button>
+      </div>
+
+      <div id="status" class="status-indicator status-running">🟢 System Running</div>
+      <div class="section-title">Planet Speed Controls</div>
+      <div id="speed-controls"></div>
+
+      <div class="instructions">
+        <strong>💡 Instructions:</strong><br />
+        • Adjust sliders to change orbital speeds<br />
+        • Tap any planet to focus<br />
+        • Drag or pinch on canvas to rotate and zoom<br />
+        • Toggle between dark and light themes
+      </div>
+    </div>
+
+    <!-- Tooltip -->
+    <div id="tooltip"></div>
+  </div>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
