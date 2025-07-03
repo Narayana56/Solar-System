@@ -104,7 +104,7 @@ class SolarSystemSimulation {
             const orbitMaterial = new THREE.MeshBasicMaterial({
                 color: 0x444444,
                 transparent: true,
-                opacity: 0.3,
+                opacity: 0.8,
                 side: THREE.DoubleSide
             });
 
